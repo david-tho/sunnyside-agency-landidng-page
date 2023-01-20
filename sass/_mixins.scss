@@ -1,0 +1,38 @@
+@mixin fix-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+}
+
+@mixin respond($breakpoints) {
+  @if $breakpoints == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoints == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoints == tab-land {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoints == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

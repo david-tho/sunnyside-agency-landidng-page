@@ -1,0 +1,88 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+
+  &__link {
+    &:link,
+    &:visited {
+      font-family: $font-primary;
+      color: $color-white;
+      font-size: $default-font-size;
+      transition: all 0.2s;
+
+      @media only screen and (max-width: $bp-small) {
+        color: #000;
+      }
+    }
+
+    &:hover,
+    &:active {
+      color: #eee;
+
+      @media only screen and (max-width: $bp-small) {
+        color: #000;
+      }
+    }
+
+    &--ctl {
+      &:link,
+      &:visited {
+        font-family: $font-secondary;
+        padding: 0.8rem 2rem;
+        border-radius: 1.6rem;
+        background-color: $color-white;
+        color: $neutral-dark-grayish-blue;
+        text-transform: uppercase;
+        text-align: center;
+
+        @media only screen and (max-width: $bp-small) {
+          padding: 0;
+          text-transform: capitalize;
+          font-family: $font-primary;
+          color: #000;
+        }
+      }
+
+      &:hover,
+      &:active {
+        background-color: rgba($color-white, 0.25);
+        color: $color-white;
+
+        @media only screen and (max-width: $bp-small) {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  &__navbar {
+    display: none;
+    border: none;
+    background-color: transparent;
+    color: $color-white;
+    font-size: 36px;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-small) {
+      display: block;
+    }
+  }
+}
+
+.footer {
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: $default-font-size;
+      color: $primary-dark-moderate-cyan;
+      font-weight: 400;
+      font-family: $font-primary;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-white;
+    }
+  }
+}
