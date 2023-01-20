@@ -8,6 +8,7 @@
     letter-spacing: 1rem;
 
     @media only screen and (max-width: $bp-small) {
+      font-size: 3.2rem;
       margin: 0 auto;
       width: min-content;
     }
@@ -21,7 +22,7 @@
     @media only screen and (max-width: $bp-small) {
       flex-direction: column;
       gap: 8rem;
-      padding: 0 10rem;
+      padding: 0 8rem;
     }
   }
 

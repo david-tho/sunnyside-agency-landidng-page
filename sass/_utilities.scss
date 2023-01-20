@@ -1,5 +1,9 @@
 .margin-bottom-huge {
   margin-bottom: 14rem !important;
+
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: 10rem !important;
+  }
 }
 
 .margin-bottom-medium {
